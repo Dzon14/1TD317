@@ -51,7 +51,7 @@ int main() {
     berakna_histogram_abs(text, frekvens, antal);
     abs_till_rel(frekvens, relativFrekvens, antal);
     tolkning(relativFrekvens);
-    plotta_historgram_rel(frekvens, relativFrekvens);
+    plotta_histogram_rel(frekvens, relativFrekvens);
     
     return 0;
 }
@@ -113,7 +113,7 @@ void abs_till_rel(int frekvens[], double relativFrekvens[], int &antal) {
     cout << "Totala antalet bokstaver: " << antal << endl;
 }
 
-void plotta_historgram_rel(int frekvens[], double relativFrekvens[]) {
+void plotta_histogram_rel(int frekvens[], double relativFrekvens[]) {
     for (int i = 0; i < ANTAL_BOKSTAVER; i++)
     {
         if (frekvens[i] > 0)
